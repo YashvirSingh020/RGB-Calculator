@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #4C5270; */
+    background: #000;
+}
+
+.title {
+    color: #0d2fdb;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+.mainfield {
+    background: #F652A0;
+    padding: 20px;
+    border-radius: 12px;
+    /* height: 40vh; */
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainfield div {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.red,
+.blue,
+.green {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.red input,
+.blue input,
+.green input{
+    font-weight: bold;
+    text-align: center;
+}
+
+.glow-text {
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.glow-text:hover {
+    text-shadow: 0 0 10px #BCECE0, 0 0 20px #36EEE0, 0 0 30px #BCECE0;
+    /* color: #ff0000; */
+}
+.red:hover{
+    color: red;
+}
+.green:hover{
+    color: green;
+}
+.blue:hover{
+    color: blue;
+}
+
+.sec2 {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec2 input {
+    height: 100%;
+    width: 80px;
+}
+
+.sec3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.glow-button {
+    background-color: black;
+    color: white;
+    border: 2px solid #ff0000;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+    color: #ff0000;
+    border-color: white;
+}
+.rgb-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, blue, green, yellow, cyan, magenta, red);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rgbFlow 3s linear infinite;
+}
+
+@keyframes rgbFlow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.result{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.hide{
+    display: none;
+}

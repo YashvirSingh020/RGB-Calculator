@@ -1,0 +1,52 @@
+git <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBG CONTRAST CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h2 class="title rgb-text">RBG CONTRAST CALCULATOR</h2>
+        </div>
+        <div class="mainfield">
+            <div class="sec1">
+                <div class="red glow-text">
+                    <label for="redcolor" class="colorName">RED</label>
+                    <input type="number" name="" id="redcolor" value="0">
+                </div>
+                <div class="green glow-text">
+                    <label for="greencolor" class="colorName">GREEN</label>
+                    <input type="number" name="" id="greencolor" value="0">
+                </div>
+                <div class="blue glow-text">
+                    <label for="bluecolor" class="colorName">BLUE</label>
+                    <input type="number" name="" id="bluecolor" value="0">
+                </div>
+            </div>
+            <div class="sec2 glow-text">
+                <label for="colorPicker">Choose a color:</label>
+                <input type="color" id="colorPicker" value="#ffffff">
+            </div>
+            <div class="sec3">
+                <button class="clear glow-button" id="clear">Clear All</button>
+                <button class="calculate glow-button" id="calculate">Calculate</button>
+            </div>
+            <div class="sec4">
+                <div class="result hide rgb-text">
+                    CONTRAST RATIO = ${ratio}
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <!-- working -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
