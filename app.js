@@ -1,4 +1,3 @@
-// Select elements
 let red = document.querySelector("#redcolor");
 let green = document.querySelector("#greencolor");
 let blue = document.querySelector("#bluecolor");
