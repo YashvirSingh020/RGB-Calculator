@@ -44,7 +44,7 @@ blue.addEventListener('input', function () {
     let r = parseInt(red.value);
     let g = parseInt(green.value);
     let b = parseInt(blue.value);
-    rgbToHex(r, g, b);  // Convert and update color picker
+    rgbToHex(r, g, b); 
 });
 
 result.addEventListener('click', function() {
